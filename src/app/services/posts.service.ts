@@ -5,6 +5,8 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class PostsService {
 
   constructor(private fs: AngularFirestore) { }
@@ -22,5 +24,11 @@ export class PostsService {
        console.log(data);
      })
     }))
+   }
+
+   countViews (){
+
+      
+
    }
 }

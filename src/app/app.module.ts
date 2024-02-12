@@ -23,6 +23,8 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment';
 
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -45,6 +47,7 @@ import { environment } from 'src/environments/environment';
   imports: [
     BrowserModule, 
     AngularFireModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase) ,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
 
